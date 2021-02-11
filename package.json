@@ -18,8 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
+    "storybook": "start-storybook -p 6006 -s public",
     "chromatic": "npx chromatic --exit-once-uploaded --project-token=5df9a4e297c0"
   },
   "eslintConfig": {
@@ -38,6 +38,12 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.1.17",
+    "@storybook/addon-essentials": "^6.1.17",
+    "@storybook/addon-links": "^6.1.17",
+    "@storybook/node-logger": "^6.1.17",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.17",
     "chromatic": "^5.6.2"
   }
 }
