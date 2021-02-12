@@ -1,0 +1,54 @@
+Watching /Users/richtillman/Desktop/endpoint/endpoint-todo-list and all sub-directories not excluded by your .gitignore. Will not monitor dotfiles.
+Found & ignored ./.git/bit/components/compilers/babel/bit.envs/7.0.4/components/.dependencies/object/has-own-property/bit.utils/1.0.0/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/babel/bit.envs/7.0.4/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/1.0.23/components/.dependencies/common/build-component/bit.envs/0.0.20/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/1.0.23/components/.dependencies/common/compiler-types/bit.envs/0.0.17/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/1.0.23/components/.dependencies/common/create-workspace/bit.envs/0.0.12/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/1.0.23/components/.dependencies/common/get-capsule-name/bit.envs/0.0.14/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/1.0.23/components/.dependencies/internal/babel-base-compiler/bit.envs/1.0.5/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/1.0.23/components/.dependencies/internal/get-babel-options/bit.envs/1.0.3/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/1.0.23/components/.dependencies/object/group-by/bit.utils/1.0.0/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/1.0.23/components/.dependencies/object/has-own-property/bit.utils/1.0.0/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/1.0.23/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/2.0.0/components/.dependencies/common/build-component/bit.envs/0.0.20/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/2.0.0/components/.dependencies/common/compiler-types/bit.envs/0.0.17/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/2.0.0/components/.dependencies/common/create-workspace/bit.envs/0.0.12/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/2.0.0/components/.dependencies/common/get-capsule-name/bit.envs/0.0.14/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/2.0.0/components/.dependencies/internal/babel-base-compiler/bit.envs/1.0.5/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/2.0.0/components/.dependencies/internal/get-babel-options/bit.envs/1.0.3/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/2.0.0/components/.dependencies/object/group-by/bit.utils/1.0.0/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/2.0.0/components/.dependencies/object/has-own-property/bit.utils/1.0.0/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/compilers/react/bit.envs/2.0.0/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/testers/jest/bit.envs/22.4.3/components/.dependencies/file/extract-file-name-from-path/bit.utils/0.0.3/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/testers/jest/bit.envs/22.4.3/components/.dependencies/object/has-own-property/bit.utils/0.0.1/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/testers/jest/bit.envs/22.4.3/components/.dependencies/validation/empty/bit.utils/0.0.1/node_modules ; is listed in .gitignore
+Found & ignored ./.git/bit/components/testers/jest/bit.envs/22.4.3/node_modules ; is listed in .gitignore
+Found & ignored ./node_modules ; is listed in .gitignore
+Found & ignored ./dist/src/components/Button/style.css ; has ignored extension
+Found & ignored ./src/App.css ; has ignored extension
+Found & ignored ./src/components/Button/style.css ; has ignored extension
+Found & ignored ./src/index.css ; has ignored extension
+Found & ignored ./src/stories/header.css ; has ignored extension
+Found & ignored ./src/stories/page.css ; has ignored extension
+Found & ignored ./storybook-static/static/css/main.0b660ce0.chunk.css ; has ignored extension
+
+Starting: build-storybook -- --output-dir /var/folders/9n/1gzchbfd4tzcs761m47xjh_h0000gn/T/chromatic--55824-WtEIYEISOyBV
+node:internal/modules/cjs/loader:903
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/richtillman/Desktop/endpoint/endpoint-todo-list/build-storybook'
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:900:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:745:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:72:12)
+    at node:internal/main/run_main_module:17:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+npm ERR! path /Users/richtillman/Desktop/endpoint/endpoint-todo-list
+npm ERR! command failed
+npm ERR! signal SIGTERM
+npm ERR! command sh -c runjs build-storybook -- --output-dir /var/folders/9n/1gzchbfd4tzcs761m47xjh_h0000gn/T/chromatic--55824-WtEIYEISOyBV
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/richtillman/.npm/_logs/2021-02-12T02_25_48_337Z-debug.log
