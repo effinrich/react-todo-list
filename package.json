@@ -9,9 +9,14 @@
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-hook-form": "^6.15.1",
+    "react-redux": "^7.2.2",
     "react-scripts": "4.0.2",
     "styled-components": "^5.2.1",
     "web-vitals": "^1.0.1"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,10 +26,97 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.12.13",
+    "@hookform/devtools": "^2.2.1",
+    "@storybook/addon-essentials": "^6.1.17",
+    "@storybook/addon-links": "^6.1.17",
+    "@storybook/node-logger": "^6.1.17",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.17",
+    "babel-loader": "8.1.0",
+    "babel-plugin-styled-components": "^1.12.0",
+    "chromatic": "^5.6.2",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "prettier-eslint-cli": "^5.0.0"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "none"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "prettier",
+      "prettier/react",
+      "plugin:jsx-a11y/recommended"
+    ],
+    "rules": {
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "new-cap": "off",
+      "no-invalid-this": "off",
+      "consistent-return": "off",
+      "valid-jsdoc": "off",
+      "no-unused-vars": "error",
+      "no-redeclare": "error",
+      "no-console": "error",
+      "react/prop-types": "error",
+      "import/no-anonymous-default-export": "off"
+    },
+    "plugins": [
+      "jsx-a11y"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.js",
+          "**/*.test.js"
+        ],
+        "rules": {
+          "max-len": [
+            "error",
+            {
+              "code": 100,
+              "ignoreUrls": true,
+              "ignoreStrings": true
+            }
+          ],
+          "max-nested-callbacks": "off",
+          "no-magic-numbers": "off",
+          "max-statements": [
+            "error",
+            30
+          ]
+        }
+      },
+      {
+        "files": [
+          "src/components/**/*.stories.js"
+        ],
+        "rules": {
+          "react/prop-types": "off"
+        }
+      },
+      {
+        "files": [
+          "src/components/**/*.js",
+          "src/views/**/*.js"
+        ],
+        "rules": {
+          "no-magic-numbers": "off"
+        }
+      }
     ]
   },
   "browserslist": {
@@ -39,12 +131,19 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@storybook/addon-essentials": "^6.1.17",
-    "@storybook/addon-links": "^6.1.17",
-    "@storybook/node-logger": "^6.1.17",
-    "@storybook/preset-create-react-app": "^3.1.5",
-    "@storybook/react": "^6.1.17",
-    "chromatic": "^5.6.2"
+  "peerDependencies": {
+    "@storybook/react": ">=5.2.0",
+    "prop-types": ">=15.0.0",
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0",
+    "styled-components": ">=4.0.0"
+  },
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react@1.0.23",
+      "tester": "bit.envs/testers/jest@22.4.3"
+    },
+    "componentsDefaultDirectory": "src/components/{name}",
+    "packageManager": "yarn"
   }
 }
