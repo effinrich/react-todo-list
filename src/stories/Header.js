@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
-import { Button } from '@bit/effinrich.endpoint-todo-list.button'
 
-// import { Button } from 'components/Button'
+import { Button } from 'components/Button'
 import './header.css'
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
@@ -33,13 +32,13 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
       </div>
       <div>
         {user ? (
-          <Button size="small" onClick={onLogout} label="Log out" />
+          <Button size="large" onClick={onLogout} label="Log out" />
         ) : (
           <>
-            <Button size="small" onClick={onLogin} label="Log in" />
+            <Button size="large" onClick={onLogin} label="Log in" />
             <Button
               primary
-              size="small"
+              size="large"
               onClick={onCreateAccount}
               label="Sign up"
             />
@@ -54,9 +53,9 @@ Header.propTypes = {
   user: PropTypes.shape({}),
   onLogin: PropTypes.func.isRequired,
   onLogout: PropTypes.func.isRequired,
-  onCreateAccount: PropTypes.func.isRequired,
+  onCreateAccount: PropTypes.func.isRequired
 }
 
 Header.defaultProps = {
-  user: null,
+  user: null
 }
