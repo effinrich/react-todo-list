@@ -3,15 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@loadable/component": "^5.14.1",
     "@reduxjs/toolkit": "^1.5.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.1",
+    "global": "^4.4.0",
+    "logrocket": "^1.0.14",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-hook-form": "^6.15.1",
+    "react-icons": "^4.2.0",
+    "react-loader": "^2.4.7",
     "react-redux": "^7.2.2",
     "react-scripts": "4.0.2",
+    "reflexbox": "^4.0.6",
     "styled-components": "^5.2.1",
     "web-vitals": "^1.0.1"
   },
@@ -23,9 +30,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "generate": "plop",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "npx chromatic --exit-once-uploaded --project-token=ce6357225fc6"
+    "chromatic": "npx chromatic --exit-once-uploaded --project-token=ce6357225fc6",
+    "prettier-watch": "onchange \"**/*.js\" -- prettier --write {{changed}}"
   },
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.12.13",
@@ -41,13 +50,17 @@
     "chromatic": "^5.6.2",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
+    "onchange": "^7.1.0",
+    "plop": "^2.7.4",
+    "prettier": "^2.2.1",
     "prettier-eslint-cli": "^5.0.0"
   },
   "prettier": {
     "tabWidth": 2,
     "singleQuote": true,
     "semi": false,
-    "trailingComma": "none"
+    "trailingComma": "none",
+    "arrowParens": "avoid"
   },
   "eslintConfig": {
     "extends": [
@@ -55,7 +68,12 @@
       "react-app/jest",
       "prettier",
       "prettier/react",
-      "plugin:jsx-a11y/recommended"
+      "plugin:jsx-a11y/recommended",
+      "plugin:react-hooks/recommended"
+    ],
+    "plugins": [
+      "jsx-a11y",
+      "react-hooks"
     ],
     "rules": {
       "quotes": [
@@ -76,9 +94,6 @@
       "react/prop-types": "error",
       "import/no-anonymous-default-export": "off"
     },
-    "plugins": [
-      "jsx-a11y"
-    ],
     "overrides": [
       {
         "files": [
@@ -147,5 +162,24 @@
     },
     "componentsDefaultDirectory": "src/components/{name}",
     "packageManager": "yarn"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!<rootDir>/node_modules/",
+      "!src/index.js",
+      "!src/**/*.stories.js",
+      "!src/stories/",
+      "!src/utils/**/*"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 0,
+        "functions": 0,
+        "lines": 0,
+        "statements": 0
+      }
+    },
+    "resetMocks": false
   }
 }

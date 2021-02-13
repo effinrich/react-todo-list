@@ -1,0 +1,13 @@
+import React from 'react'
+
+import { render/*, screen*/ } from 'utils/testUtils/helperRtl'
+
+import {{pascalCase name}} from '..'
+
+describe('{{pascalCase name}} Component', () => {
+it('should render without crashing', () => {
+const { container } = render(
+<{{pascalCase name}} />)
+expect(container).toMatchSnapshot()
+})
+})

@@ -1,0 +1,22 @@
+import React/*, {useState, useEffect}*/ from 'react'
+import PropTypes from 'prop-types'
+
+import Styled{{pascalCase name}} from './style'
+
+const {{pascalCase name}} = ({ examplePropText }) => {
+return (
+<Styled{{pascalCase name}}>
+  {examplePropText}
+</Styled{{pascalCase name}}>
+)
+}
+
+{{pascalCase name}}.defaultProps = {
+examplePropText: 'example text'
+}
+
+{{pascalCase name}}.propTypes = {
+examplePropText: PropTypes.string
+}
+
+export default {{pascalCase name}}
