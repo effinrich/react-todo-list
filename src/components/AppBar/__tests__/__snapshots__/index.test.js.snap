@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppBar Component should render without crashing 1`] = `
+<div>
+  <div
+    class="sc-gsTCUz gMIZDD css-k9o90o"
+  />
+</div>
+`;
