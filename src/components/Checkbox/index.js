@@ -61,6 +61,7 @@ export default class Checkbox extends PureComponent {
       <StyledCheckbox {...styledLogicProps} {...styledProps}>
         <StyledCheckboxSwitch {...styledLogicProps}>
           <StyledCheckboxInput
+            data-testid="checkbox"
             name={name}
             type="checkbox"
             onChange={this.handleOnChange}
