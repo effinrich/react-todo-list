@@ -62,7 +62,7 @@ const baseStyles = styled.button`
   transition: background-color 0.3s, color 0.3s;
   outline: none;
   text-decoration: none;
-  border-radius: ${({ circle }) => (circle ? '50%' : '4px')};
+  border-radius: ${({ circle }) => (circle ? '50%' : '8px')};
 
   & * {
     pointer-events: none;
