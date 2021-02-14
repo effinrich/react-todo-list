@@ -15,8 +15,8 @@ const children = () => (
 
 describe('AppBar Component', () => {
   it('should render without crashing', () => {
-    const { container } = render(<AppBar />)
-    expect(container).toMatchSnapshot()
+    const { getByTestId } = render(<AppBar />)
+    expect(getByTestId('app-bar')).toBeInTheDocument()
   })
 
   it('should render a logo image', () => {

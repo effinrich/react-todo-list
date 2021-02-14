@@ -5,6 +5,7 @@ import StyledAppBar from './style'
 
 const AppBar = ({ children, ...props }) => (
   <StyledAppBar
+    data-testid="app-bar"
     flexDirection="row"
     alignItems="center"
     justifyItems="space-between"
@@ -16,7 +17,7 @@ const AppBar = ({ children, ...props }) => (
 )
 
 AppBar.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node])
 }
 
 export default AppBar

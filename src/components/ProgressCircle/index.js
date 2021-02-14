@@ -23,7 +23,7 @@ const defaultProps = {
 
 const ProgressCircle = ({ color, scale, position, ...styledProps }) => {
   return (
-    <StyledLoader {...styledProps}>
+    <StyledLoader {...styledProps} data-testid="progress-circle">
       <Loader
         loaded={false}
         color={color}

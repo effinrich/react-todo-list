@@ -6,8 +6,8 @@ import ProgressCircle from '../'
 
 describe('ProgressCircle Component', () => {
   it('should render without crashing', () => {
-    const { container } = render(<ProgressCircle />)
-    expect(container).toMatchSnapshot()
+    const { getByTestId } = render(<ProgressCircle />)
+    expect(getByTestId('progress-circle')).toBeInTheDocument()
   })
 
   it('should render child element', () => {
