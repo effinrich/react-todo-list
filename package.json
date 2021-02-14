@@ -33,7 +33,7 @@
     "generate": "plop",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "npx chromatic --exit-once-uploaded --project-token=ce6357225fc6",
+    "chromatic": "npx chromatic --project-token=ce6357225fc6",
     "prettier-watch": "onchange \"**/*.js\" -- prettier --write {{changed}}"
   },
   "devDependencies": {
