@@ -39,3 +39,10 @@ Error: Cannot find module '/Users/richtillman/Desktop/endpoint/endpoint-todo-lis
   code: 'MODULE_NOT_FOUND',
   requireStack: []
 }
+npm ERR! path /Users/richtillman/Desktop/endpoint/endpoint-todo-list
+npm ERR! command failed
+npm ERR! signal SIGINT
+npm ERR! command sh -c runjs build-storybook -- --output-dir /var/folders/9n/1gzchbfd4tzcs761m47xjh_h0000gn/T/chromatic--30404-sGiMWDXEYUKf
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/richtillman/.npm/_logs/2021-02-14T06_30_48_511Z-debug.log
