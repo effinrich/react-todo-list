@@ -3,6 +3,10 @@ import PropTypes from 'prop-types'
 
 import StyledAppBar from './style'
 
+/**
+- Use an AppBar for fixed view or section navigation and/or branding.
+**/
+
 const AppBar = ({ children, ...props }) => (
   <StyledAppBar
     data-testid="app-bar"
@@ -17,6 +21,9 @@ const AppBar = ({ children, ...props }) => (
 )
 
 AppBar.propTypes = {
+  /**
+   The children prop is satisfied when the AppBar is populated with an element node or string.
+  */
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.node])
 }
 

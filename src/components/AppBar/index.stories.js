@@ -11,7 +11,8 @@ export default {
   component: AppBar,
   parameters: {
     componentSubtitle:
-      'Displays a fixed app bar header for branding, navigation, etc.'
+      'Displays a fixed app bar header for branding, navigation, etc.',
+    docs: { inlineStories: false, iframeHeight: 500 }
   }
 }
 
