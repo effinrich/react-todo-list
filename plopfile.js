@@ -27,8 +27,8 @@ module.exports = plop => {
       },
       {
         type: 'add',
-        path: 'src/components/{{pascalCase name}}/index.js',
-        templateFile: 'plop-templates/Component/index.js.hbs'
+        path: 'src/components/{{pascalCase name}}/__tests__/index.test.js',
+        templateFile: 'plop-templates/Component/__tests__/index.test.js.hbs'
       },
       {
         type: 'add',
