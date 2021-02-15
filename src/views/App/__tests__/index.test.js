@@ -1,4 +1,4 @@
-import { render } from 'utils/helperRtl'
+import { render } from 'utils/testing/helperRtl'
 
 import App from '..'
 

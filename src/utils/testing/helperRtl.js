@@ -3,13 +3,21 @@ import PropTypes from 'prop-types'
 import { render } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 import store from 'store'
+
+const helmetContext = {}
 
 const Wrapper = ({ children }) => {
   return (
     <Provider store={store}>
-      <MemoryRouter>{children}</MemoryRouter>
+      <HelmetProvider context={helmetContext}>
+        <Helmet>
+          <title>Hello World</title>
+        </Helmet>
+        <MemoryRouter>{children}</MemoryRouter>
+      </HelmetProvider>
     </Provider>
   )
 }
