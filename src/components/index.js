@@ -1,7 +1,4 @@
 /* PLOP_INJECT_IMPORT */
-import ListItem from './ListItem'
+import ToDoItem from './ToDoItem'
 
-export {
-  /* PLOP_INJECT_EXPORT */
-  ListItem
-}
+export { /* PLOP_INJECT_EXPORT */ ToDoItem }
