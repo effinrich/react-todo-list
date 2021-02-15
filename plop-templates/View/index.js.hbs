@@ -1,12 +1,12 @@
 import React/*, {useState, useEffect}*/ from 'react'
 //import PropTypes from 'prop-types'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
 import Styled{{pascalCase name}} from './style'
 
 const {{pascalCase name}} = props => {
 return (
-<Styled{{pascalCase name}}>
+<Styled{{pascalCase name}} data-testid="{{dashCase name}}">
   <Helmet>
     <title>{{titleCase name}}</title>
     <meta name="description" content="description here" />

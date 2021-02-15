@@ -1,13 +1,13 @@
 import React from 'react'
 
-import { render/*, screen*/ } from 'utils/testUtils/helperRtl'
+import { render/*, screen*/ } from 'utils/testing/helperRtl'
 
 import {{pascalCase name}} from '..'
 
 describe('{{pascalCase name}} Component', () => {
 it('should render without crashing', () => {
-const { container } = render(
+const { getByTestId } = render(
 <{{pascalCase name}} />)
-expect(container).toMatchSnapshot()
+expect(getByTestId('{{dashCase name}}')).toBeInTheDocument()
 })
 })
