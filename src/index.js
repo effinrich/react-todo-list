@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { ThemeProvider } from 'emotion-theming'
 import loadable from '@loadable/component'
+import { HelmetProvider } from 'react-helmet-async'
 import LogRocket from 'logrocket'
 
 import theme from 'theme'
@@ -13,15 +14,19 @@ import reportWebVitals from './reportWebVitals'
 // @loadable/component provides the same benefit of React's Lazy/Suspense code-splitting components, but doesn't require the Suspense component, so is a bit more efficient.
 const App = loadable(/* istanbul ignore next */ () => import('views/App'))
 
+const helmetContext = {}
+
 // app monitoring service
 LogRocket.init('endpoint/todo-list')
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <ThemeProvider theme={theme}>
-        <App />
-      </ThemeProvider>
+      <HelmetProvider context={helmetContext}>
+        <ThemeProvider theme={theme}>
+          <App />
+        </ThemeProvider>
+      </HelmetProvider>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
