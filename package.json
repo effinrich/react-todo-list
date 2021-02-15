@@ -12,7 +12,9 @@
     "global": "^4.4.0",
     "logrocket": "^1.0.14",
     "react": "^17.0.1",
+    "react-aria": "^3.3.0",
     "react-dom": "^17.0.1",
+    "react-helmet-async": "^1.0.7",
     "react-hook-form": "^6.15.1",
     "react-icons": "^4.2.0",
     "react-loader": "^2.4.7",
@@ -56,7 +58,8 @@
     "onchange": "^7.1.0",
     "plop": "^2.7.4",
     "prettier": "^2.2.1",
-    "prettier-eslint-cli": "^5.0.0"
+    "prettier-eslint-cli": "^5.0.0",
+    "storybook-addon-designs": "^5.4.3"
   },
   "prettier": {
     "tabWidth": 2,
@@ -152,7 +155,7 @@
     ]
   },
   "peerDependencies": {
-    "@storybook/react": ">=5.2.0",
+    "@storybook/react": ">=6.1.17",
     "prop-types": ">=15.0.0",
     "react": ">=17.0.0",
     "react-dom": ">=17.0.0",
