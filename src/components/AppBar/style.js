@@ -1,10 +1,7 @@
 import styled from 'styled-components'
-import { space } from 'styled-system'
 import { Flex } from 'reflexbox'
 
 export default styled(Flex)`
-  ${space};
-
   top: 0;
   left: 0;
   position: fixed;

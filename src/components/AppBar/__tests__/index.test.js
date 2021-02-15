@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from 'reflexbox'
 
-import { render } from 'utils/helperRtl'
+import { render } from 'utils/testing/helperRtl'
 import Image from 'components/Image'
 import Logo from 'assets/logo.svg'
 
