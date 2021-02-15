@@ -9,7 +9,7 @@ export default {
   component: ProgressCircle
 }
 
-const Template = (args) => <ProgressCircle {...args} />
+const Template = args => <ProgressCircle {...args} />
 
 export const Default = Template.bind({})
 Default.args = { color: theme.brandColor }

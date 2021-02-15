@@ -1,16 +1,22 @@
 import React from 'react'
 import { action } from '@storybook/addon-actions'
+import { config, withDesign } from 'storybook-addon-designs'
 
 import Checkbox from '.'
 
 export default {
   title: 'UI Library/Checkbox',
-  component: Checkbox
+  decorators: [withDesign],
+  component: Checkbox,
+  parameters: {
+    design: config({
+      type: 'figma',
+      url: 'https://www.figma.com/file/rVGBZD3dgFYelFCH3tL0Ti'
+    })
+  }
 }
 
-const Template = (args) => (
-  <Checkbox {...args} type="checkbox" name="checkbox" />
-)
+const Template = args => <Checkbox {...args} type="checkbox" name="checkbox" />
 
 export const Default = Template.bind({})
 Default.args = {

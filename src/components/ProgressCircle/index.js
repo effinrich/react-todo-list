@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Loader from 'react-loader'
+import { useProgressBar } from 'react-aria'
 
 import theme from 'theme'
 
@@ -21,9 +22,18 @@ const defaultProps = {
   p: '9px'
 }
 
-const ProgressCircle = ({ color, scale, position, ...styledProps }) => {
+const ProgressCircle = ({ color, scale, position, ...styledProps }, props) => {
+  const { progressBarProps } = useProgressBar({
+    isIndeterminate: true,
+    'aria-label': 'Loading...'
+  })
+
   return (
-    <StyledLoader {...styledProps} data-testid="progress-circle">
+    <StyledLoader
+      data-testid="progress-circle"
+      {...progressBarProps}
+      {...styledProps}
+    >
       <Loader
         loaded={false}
         color={color}
