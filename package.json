@@ -1,7 +1,12 @@
 {
   "name": "endpoint-todo-list",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/index.js",
+  "repository": "https://effinrich@github.com/effinrich/endpoint-todo-list.git",
+  "author": "Rich <rich@freebirdrides.com>",
+  "description": "Coding challenge for Endpoint Closing",
+  "license": "MIT",
   "dependencies": {
     "@loadable/component": "^5.14.1",
     "@reduxjs/toolkit": "^1.5.0",
@@ -30,16 +35,28 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "generate": "plop",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
+    "build-storybook-docs": "build-storybook -s public --docs",
     "chromatic": "./node_modules/.bin/chromatic --project-token=ce6357225fc6",
     "prettier-watch": "onchange \"**/*.js\" -- prettier --write {{changed}}"
   },
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
+  },
   "devDependencies": {
+    "@babel/cli": "^7.12.16",
     "@babel/plugin-transform-react-jsx": "^7.12.13",
     "@babel/preset-env": "^7.12.16",
     "@hookform/devtools": "^2.2.1",
@@ -49,9 +66,11 @@
     "@storybook/node-logger": "^6.1.17",
     "@storybook/preset-create-react-app": "^3.1.5",
     "@storybook/react": "^6.1.17",
+    "auto": "^10.16.5",
     "babel-loader": "8.1.0",
     "babel-plugin-styled-components": "^1.12.0",
     "chromatic": "^5.6.2",
+    "cross-env": "^7.0.3",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "jest-styled-components": "^7.0.3",
