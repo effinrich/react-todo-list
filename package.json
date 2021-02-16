@@ -42,6 +42,7 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
+    "release": "auto shipit --base-branch=master",
     "chromatic": "./node_modules/.bin/chromatic --project-token=ce6357225fc6",
     "prettier-watch": "onchange \"**/*.js\" -- prettier --write {{changed}}"
   },
@@ -53,6 +54,10 @@
           "absoluteRuntime": false
         }
       ]
+    ],
+    "plugins": [
+      "babel-plugin-styled-components",
+      "@babel/plugin-transform-react-jsx"
     ]
   },
   "devDependencies": {
