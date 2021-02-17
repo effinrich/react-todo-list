@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { render } from 'utils/testing/helperRtl'
+import { render } from 'common/utils/testing/helperRtl'
 
-import ProgressCircle from '../'
+import ProgressCircle from '..'
 
 describe('ProgressCircle Component', () => {
   it('should render without crashing', () => {

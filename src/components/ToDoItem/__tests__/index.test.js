@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { render /*, screen*/ } from 'utils/testing/helperRtl'
+import { render /*, screen*/ } from 'common/utils/testing/helperRtl'
 
-import ToDoItem from '..'
+import TodoItem from '..'
 
-describe('ToDoItem Component', () => {
+describe('TodoItem Component', () => {
   it('should render without crashing', () => {
-    const { getByTestId } = render(<ToDoItem />)
+    const { getByTestId } = render(<TodoItem />)
     expect(getByTestId('to-do-item')).toBeInTheDocument()
   })
 })

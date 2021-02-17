@@ -1,4 +1,4 @@
-/* PLOP_INJECT_IMPORT */
-import ToDoItem from './ToDoItem'
+import TodoList from './TodoList'
+import TodoItem from './TodoItem'
 
-export { /* PLOP_INJECT_EXPORT */ ToDoItem }
+export { TodoList, TodoItem }

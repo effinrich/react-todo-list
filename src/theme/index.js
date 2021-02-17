@@ -23,11 +23,13 @@ export default {
   brandColor: '#1292b4',
   textColor: 'rgb(122, 122, 122)',
   errorColor: 'rgb(202, 25, 0)',
+  pinkErrorColor: 'rgb(255, 195, 198)',
   warningColor: 'rgb(255, 152, 0)',
-  successColor: 'rgb(98, 169, 116)',
+  successColor: 'rgb(196, 255, 200)',
   infoColor: 'rgb(91, 152, 210)',
   medGrey: '#A2A2A2',
   lightMedGrey: 'rgb(197, 197, 197)',
+  lightGrey: 'rgb(241, 241, 241)',
   primaryButtonUpBg: '#1292b4',
   primaryButtonUpText: 'white',
   primaryButtonOverBg: '#1084b4',
@@ -62,6 +64,12 @@ export default {
       p: [2, 3],
       borderRadius: 'default',
       bg: 'white',
+      boxShadow: 'card'
+    },
+    listItem: {
+      p: 2,
+      mb: 2,
+      borderRadius: 'default',
       boxShadow: 'card'
     }
   }

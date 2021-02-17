@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import { space } from 'styled-system'
 
-import theme from 'theme'
+import theme from 'common/theme'
 
 export default styled.div`
   ${space};
@@ -22,20 +22,20 @@ export default styled.div`
 
   img {
     width: 100%;
-    max-width: ${(props) => props.maxWidth}px;
+    max-width: ${props => props.maxWidth}px;
     height: auto;
-    background-color: ${(props) => (props.bg ? props.bg : theme.lightMedGrey)};
-    ${(props) => (props.thumb ? thumbMixin : null)};
-    ${(props) => (props.border ? borderMixin : null)};
-    ${(props) => (props.borderColor ? borderColorMixin : null)};
+    background-color: ${props => (props.bg ? props.bg : theme.lightMedGrey)};
+    ${props => (props.thumb ? thumbMixin : null)};
+    ${props => (props.border ? borderMixin : null)};
+    ${props => (props.borderColor ? borderColorMixin : null)};
     display: block;
   }
 `
 
 const thumbMixin = css`
   object-fit: cover;
-  width: ${(props) => props.maxWidth}px;
-  height: ${(props) => props.maxWidth}px;
+  width: ${props => props.maxWidth}px;
+  height: ${props => props.maxWidth}px;
 `
 
 const borderMixin = css`
@@ -43,5 +43,5 @@ const borderMixin = css`
 `
 
 const borderColorMixin = css`
-  border: solid 4px ${(props) => props.borderColor};
+  border: solid 4px ${props => props.borderColor};
 `

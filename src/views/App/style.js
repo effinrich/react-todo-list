@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components'
 import { space } from 'styled-system'
 
-import theme from 'theme'
+import theme from 'common/theme'
 
 export const GlobalStyle = createGlobalStyle`
   * {

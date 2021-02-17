@@ -14,8 +14,10 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
+    "date-fns": "^2.17.0",
     "global": "^4.4.0",
     "logrocket": "^1.0.14",
+    "normalizr": "^3.6.1",
     "react": "^17.0.1",
     "react-aria": "^3.3.0",
     "react-dom": "^17.0.1",
@@ -28,6 +30,7 @@
     "react-scripts": "4.0.2",
     "reflexbox": "^4.0.6",
     "styled-components": "^5.2.1",
+    "tinycolor2": "^1.4.2",
     "web-vitals": "^1.0.1"
   },
   "resolutions": {
@@ -120,7 +123,7 @@
       "valid-jsdoc": "off",
       "no-unused-vars": "error",
       "no-redeclare": "error",
-      "no-console": "error",
+      "no-console": "warn",
       "react/prop-types": "error",
       "import/no-anonymous-default-export": "off"
     },

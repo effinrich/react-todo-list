@@ -12,8 +12,8 @@ import {
 import isNumber from 'lodash/isNumber'
 import omit from 'lodash/omit'
 
-import theme from 'theme'
-import { display, minHeight } from 'utils/styled'
+import theme from 'common/theme'
+import { display, minHeight } from 'common/utils/styled'
 
 const activeMixin = css`
   background-color: ${props => props.overBg || theme.lightMedGrey};

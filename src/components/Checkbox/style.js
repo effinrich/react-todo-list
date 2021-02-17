@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import theme from 'common/theme'
+
 export const StyledCheckboxSwitch = styled.label`
   position: relative;
   display: inline-block;
@@ -15,11 +17,11 @@ export const StyledCheckboxBox = styled.span`
   right: 0;
   bottom: 0;
 
-  background-color: ${({ disabled, theme }) =>
+  background-color: ${({ disabled }) =>
     disabled ? theme.superLightGrey : 'white'};
 
   border: solid 2px
-    ${({ disabled, checked, error, warning, theme }) => {
+    ${({ disabled, checked, error, warning }) => {
       if (disabled) return theme.lightMedGrey
       if (checked && error) return theme.errorColor
       if (warning) return theme.warningColor
@@ -33,7 +35,7 @@ export const StyledCheckboxInput = styled.input`
   display: none;
 
   &:checked + ${StyledCheckboxBox} {
-    background-color: ${({ error, warning, theme }) => {
+    background-color: ${({ error, warning }) => {
       if (error) return theme.errorColor
       if (warning) return theme.warningColor
       return theme.brandColor
