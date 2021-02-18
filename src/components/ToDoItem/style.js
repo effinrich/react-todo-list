@@ -3,7 +3,7 @@ import { space } from 'styled-system'
 import { Flex, Box } from 'reflexbox'
 import color from 'tinycolor2'
 
-import theme from 'common/theme'
+import theme from 'theme'
 
 const colorMap = {
   incomplete: 'lightGrey',

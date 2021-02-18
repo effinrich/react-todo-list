@@ -1,7 +1,7 @@
 import React from 'react'
 // import { action } from '@storybook/addon-actions'
 
-import Decorator from 'common/utils/storybook'
+import Decorator from 'utils/storybook'
 
 import BodyCopy from '.'
 

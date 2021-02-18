@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { render } from 'common/utils/testing/helperRtl'
+import { render } from 'utils/testing/helperRtl'
 
 import ProgressCircle from '..'
 

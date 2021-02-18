@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'emotion-theming'
 import { createGlobalStyle } from 'styled-components'
 
-import theme from '../src/common/theme'
+import theme from '../src/theme'
 
 const GlobalStyle = createGlobalStyle`
   * {

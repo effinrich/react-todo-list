@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import theme from 'common/theme'
+import theme from 'theme'
 
 export const StyledCheckboxSwitch = styled.label`
   position: relative;

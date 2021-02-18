@@ -1,8 +1,8 @@
 import React from 'react'
 import { Box } from 'reflexbox'
 
-import { render } from 'common/utils/testing/helperRtl'
-import Image from 'common/components/Image'
+import { render } from 'utils/testing/helperRtl'
+import Image from 'components/Image'
 import Logo from 'assets/logo.svg'
 
 import AppBar from '..'

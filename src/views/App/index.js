@@ -3,16 +3,16 @@ import Loadable from '@loadable/component'
 import { Box } from 'reflexbox'
 import { useSelector, useDispatch } from 'react-redux'
 
-import AppBar from 'common/components/AppBar'
-import Image from 'common/components/Image'
+import AppBar from 'components/AppBar'
+import Image from 'components/Image'
 import Logo from 'assets/logo.svg'
-import LoadingView from 'common/components/LoadingView'
+import LoadingView from 'components/LoadingView'
 import { fetchTodos, patchTodoItem } from 'store/todos'
 
 import StyledApp, { GlobalStyle, StyledAppContainer } from './style'
 
 const TodoList = Loadable(
-  /* istanbul ignore next */ () => import('common/components/TodoList')
+  /* istanbul ignore next */ () => import('components/TodoList')
 )
 
 const App = props => {

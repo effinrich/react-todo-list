@@ -6,7 +6,7 @@ import Loadable from '@loadable/component'
 import { HelmetProvider } from 'react-helmet-async'
 import LogRocket from 'logrocket'
 
-import theme from 'common/theme'
+import theme from 'theme'
 import store from 'store'
 
 import reportWebVitals from './reportWebVitals'

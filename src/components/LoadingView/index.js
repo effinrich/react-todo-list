@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Flex, Box } from 'reflexbox'
 
-import theme from 'common/theme'
-import BodyCopy from 'common/components/Text/BodyCopy'
-import ProgressCircle from 'common/components/ProgressCircle'
+import theme from 'theme'
+import BodyCopy from 'components/Text/BodyCopy'
+import ProgressCircle from 'components/ProgressCircle'
 
 import StyledLoadingView from './style'
 

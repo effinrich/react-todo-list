@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import { color, fontSize, fontWeight, space, lineHeight } from 'styled-system'
 
-import theme from 'common/theme'
+import theme from 'theme'
 
 export default styled.p`
   ${color};

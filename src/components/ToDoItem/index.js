@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { isPast, format } from 'date-fns'
 import { Box, Flex } from 'reflexbox'
 
-import Checkbox from 'common/components/Checkbox'
+import Checkbox from 'components/Checkbox'
 
 import StyledTodoItem, { StyledDateBox, StyledDescBox } from './style'
 

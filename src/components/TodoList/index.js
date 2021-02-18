@@ -6,7 +6,7 @@ import Loadable from '@loadable/component'
 import StyledTodoList from './style'
 
 const TodoItem = Loadable(
-  /* istanbul ignore next */ () => import('common/components/TodoItem')
+  /* istanbul ignore next */ () => import('components/TodoItem')
 )
 
 const TodoList = ({ todos, ...rest }) => {

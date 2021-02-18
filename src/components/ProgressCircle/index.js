@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Loader from 'react-loader'
 import { useProgressBar } from 'react-aria'
 
-import theme from 'common/theme'
+import theme from 'theme'
 
 import StyledLoader from './style'
 
