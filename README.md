@@ -1,4 +1,30 @@
-# Getting Started with Create React App
+# Endpoint Take-Home Challenge
+- Tooling: I used a few tools I've wanted to try out.  Those are LogRocket, Chromatic (see below) and PlopJs.  I can create logins by request.
+- Mobile: The responsiveness can be tested within Storybook for each component. Once running, there is a small icon on the top bar of Storybook to adjust viewport.  
+- State management: I used redux/toolkit for state management and handling API responses, it's very compact and streamlined compared to Redux original.
+- Design-System: I'm very big on component driven development and design-systems, so I built a simple one into this project using Storybook, Chromatic and NPM. On commit to master new components and changes go to Chromatic for review and visual testing.  Once signed off on and merged, the components from the project are shipped to NPM where they can be used like any NPM package for reuse.  You can visit this link to see the Chromatic system I created for this project. It's fully funcional, do what you like in there.
+  - Chromatic: https://chromatic.com/library?appId=60263de1aab4a60023ed8d70&branch=master
+  - This project's Storybook in Chromatic: https://master--60263de1aab4a60023ed8d70.chromatic.com    
+
+
+## Instructions:
+CD to endpoint-todo-list directory and run the following terminal commands to run app locally:
+1. `yarn` - this installs dependencies
+2. `yarn start` - to start the project server, which opens the React app in your browser when ready.
+3. `yarn build` - to build for production.
+4. `yarn storybook` - to start the Storybook isolated dev environment.  Storybook also works as auto-generated documentation for the components.
+5. `yarn generate` - to build a template for component, view or hook.  Example: `yarn generate component ComponentName`  
+
+## Tests:
+I wrote some smoke tests, but didn't get to test as much as I'd like due to unexpected project maintenance for my employer. However the "stories" for the Storybook components serve as tests.
+
+## Try Storybook:
+You'll notice a "storybook" script in package.json.  Open a terminal to the root of the project, run `yarn storybook` to launch an interactive suite for testing components in isolation. This will open on localhost:6006.  All of the components were developed using Storybook, which is part of the simple design-system I created for this project. The collaborative part of the design-system is Chromatic. 
+
+### Chromatic
+Chromatic allows sharing and peer review of UI/UX created in Storybook, but accessible on a public or private URL for colleagues to review and accept, deny or request edits to components.  Here is the chromatic link generated from this project's Storybook components:  https://www.chromatic.com/library?appId=5fdbeb830d86c5002111fe32&branch=master
+
+# Getting Started with Create React App 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
