@@ -1,3 +1,16 @@
+# v0.1.2 (Thu Feb 18 2021)
+
+#### ⚠️ Pushed to `master`
+
+- merge ([@effinrich](https://github.com/effinrich))
+- fixed a cluster fuck of path issues ([@effinrich](https://github.com/effinrich))
+
+#### Authors: 1
+
+- Rich Tillman ([@effinrich](https://github.com/effinrich))
+
+---
+
 # v0.1.1 (Thu Feb 18 2021)
 
 #### ⚠️ Pushed to `master`
