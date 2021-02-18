@@ -1,13 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Loadable from '@loadable/component'
-// import { compareAsc } from 'date-fns'
+
+import TodoItem from 'components/TodoItem'
 
 import StyledTodoList from './style'
-
-const TodoItem = Loadable(
-  /* istanbul ignore next */ () => import('components/TodoItem')
-)
 
 const TodoList = ({ todos, ...rest }) => {
   return (
@@ -15,8 +11,6 @@ const TodoList = ({ todos, ...rest }) => {
       {todos.map((todo, index) => (
         <TodoItem todo={todo} key={index} {...rest} />
       ))}
-      {/* .sort( (a, b) => b.dueDate && new Date(b.dueDate) - a.dueDate && new
-      Date(a.dueDate) ) */}
     </StyledTodoList>
   )
 }
