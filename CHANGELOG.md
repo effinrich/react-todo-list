@@ -1,3 +1,20 @@
+# v0.1.3 (Thu Feb 18 2021)
+
+#### ⚠️ Pushed to `master`
+
+- revert build script ([@effinrich](https://github.com/effinrich))
+- more bug tracking ([@effinrich](https://github.com/effinrich))
+- bug tracking ([@effinrich](https://github.com/effinrich))
+- updated build script ([@effinrich](https://github.com/effinrich))
+- Merge branch 'master' of https://github.com/effinrich/endpoint-todo-list ([@effinrich](https://github.com/effinrich))
+- finish up sorting ([@effinrich](https://github.com/effinrich))
+
+#### Authors: 1
+
+- Rich Tillman ([@effinrich](https://github.com/effinrich))
+
+---
+
 # v0.1.2 (Thu Feb 18 2021)
 
 #### ⚠️ Pushed to `master`
