@@ -22,7 +22,9 @@ I wrote some smoke tests, but didn't get to test as much as I'd like due to unex
 You'll notice a "storybook" script in package.json.  Open a terminal to the root of the project, run `yarn storybook` to launch an interactive suite for testing components in isolation. This will open on localhost:6006.  All of the components were developed using Storybook, which is part of the simple design-system I created for this project. The collaborative part of the design-system is Chromatic. 
 
 ### Chromatic
-Chromatic allows sharing and peer review of UI/UX created in Storybook, but accessible on a public or private URL for colleagues to review and accept, deny or request edits to components.  Here is the chromatic link generated from this project's Storybook components:  https://www.chromatic.com/library?appId=5fdbeb830d86c5002111fe32&branch=master
+Chromatic allows sharing and peer review of UI/UX created in Storybook, but accessible on a public or private URL for colleagues to review and accept, deny or request edits to components.  Here are the chromatic links generated from this project's Storybook components:
+- Chromatic: https://chromatic.com/library?appId=60263de1aab4a60023ed8d70&branch=master
+- This project's Storybook in Chromatic: https://master--60263de1aab4a60023ed8d70.chromatic.com
 
 # Getting Started with Create React App 
 
