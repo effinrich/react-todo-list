@@ -1,3 +1,15 @@
+# v0.1.6 (Thu Feb 18 2021)
+
+#### ⚠️ Pushed to `master`
+
+- update readme ([@effinrich](https://github.com/effinrich))
+
+#### Authors: 1
+
+- Rich Tillman ([@effinrich](https://github.com/effinrich))
+
+---
+
 # v0.1.5 (Thu Feb 18 2021)
 
 #### ⚠️ Pushed to `master`
