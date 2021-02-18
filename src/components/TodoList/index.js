@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import TodoItem from 'components/TodoItem'
+import TodoItem from '../TodoItem'
 
 import StyledTodoList from './style'
 
