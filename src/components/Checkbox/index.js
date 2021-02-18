@@ -37,11 +37,8 @@ export default class Checkbox extends PureComponent {
   }
 
   handleOnChange = event => {
-    const nextChecked = !this.state.checked
-    this.setState({ checked: nextChecked })
-
     if (this.props.onChange) {
-      this.props.onChange(event, nextChecked)
+      this.props.onChange(event)
     }
 
     event.stopPropagation()

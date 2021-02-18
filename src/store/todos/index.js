@@ -38,6 +38,7 @@ const slice = createSlice({
         ...mutatedTodosList[todosIndex],
         isComplete: !mutatedTodosList[todosIndex].isComplete
       }
+
       state.todosList = mutatedTodosList
       state.isLoading = false
       state.error = null

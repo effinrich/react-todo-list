@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useMemo } from 'react'
 import Loadable from '@loadable/component'
 import { Box } from 'reflexbox'
 import { useSelector, useDispatch } from 'react-redux'
@@ -16,8 +16,28 @@ const TodoList = Loadable(
 )
 
 const App = props => {
-  const dispatch = useDispatch()
   const { todosList, error } = useSelector(state => state.todos)
+
+  const dispatch = useDispatch()
+
+  const mappedTodoList = useMemo(
+    () =>
+      todosList.map(todo => {
+        const copyTodo = { ...todo }
+        copyTodo.dueDate = new Date(todo.dueDate) || new Date(8640000000000000)
+        return copyTodo
+      }),
+    [todosList]
+  )
+
+  const sortedTodosList = useMemo(
+    () =>
+      mappedTodoList.sort(function (a, b) {
+        if (a.isComplete === b.isComplete) return b.dueDate - a.dueDate
+        return a.isComplete ? 1 : -1
+      }),
+    [mappedTodoList]
+  )
 
   useEffect(() => {
     const handleFetchTodos = () => {
@@ -44,7 +64,7 @@ const App = props => {
       </AppBar>
       <StyledAppContainer>
         <TodoList
-          todos={todosList}
+          todos={sortedTodosList}
           onChange={handlePatchTodoItem}
           error={error}
           fallback={
