@@ -23,8 +23,8 @@ You'll notice a "storybook" script in package.json.  Open a terminal to the root
 
 ### Chromatic
 Chromatic allows sharing and peer review of UI/UX created in Storybook, but accessible on a public or private URL for colleagues to review and accept, deny or request edits to components.  Here are the chromatic links generated from this project's Storybook components:
-- Chromatic: https://chromatic.com/library?appId=60263de1aab4a60023ed8d70&branch=master
-- This project's Storybook in Chromatic: https://master--60263de1aab4a60023ed8d70.chromatic.com
+- Here is this project's [Chromatic](https://chromatic.com/library?appId=60263de1aab4a60023ed8d70&branch=master)
+- Here is this project's [Storybook published to Chromatic](https://master--60263de1aab4a60023ed8d70.chromatic.com)
 
 If cloning and planning to run the entire flow locally, a Chromatic token is required:
 - Sign up here (free version is fine): https://www.chromatic.com/start
