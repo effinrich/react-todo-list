@@ -1,3 +1,15 @@
+# v0.1.8 (Mon Feb 22 2021)
+
+#### ⚠️ Pushed to `master`
+
+- update package.json ([@effinrich](https://github.com/effinrich))
+
+#### Authors: 1
+
+- Rich Tillman ([@effinrich](https://github.com/effinrich))
+
+---
+
 # v0.1.7 (Fri Feb 19 2021)
 
 #### ⚠️ Pushed to `master`
