@@ -2,6 +2,7 @@ import React from 'react'
 import { config, withDesign } from 'storybook-addon-designs'
 
 import TodoList from '.'
+import TodoItem from '../TodoItem'
 
 export default {
   title: 'UI Library/TodoList',
@@ -56,5 +57,6 @@ Default.args = {
       isComplete: false,
       dueDate: '2021-03-21T13:30:00.000Z'
     }
-  ]
+  ],
+  ...TodoItem.args
 }

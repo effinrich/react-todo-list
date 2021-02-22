@@ -1,4 +1,6 @@
-const create{{pascalCase name}} = () => {
+const create
+{{pascalCase name}}
+= () => {
 let examplePrivateVariable = 0
 
 return {
@@ -11,7 +13,9 @@ examplePrivateVariable = n
 }
 }
 
-const singleton = create{{pascalCase name}}()
+const singleton = create
+{{pascalCase name}}
+()
 Object.freeze(singleton)
 
 export default singleton
