@@ -3,8 +3,8 @@
 - Mobile: The responsiveness can be tested within Storybook for each component. Once running, there is a small icon on the top bar of Storybook to adjust viewport.  
 - State management: I used redux/toolkit for state management and handling API responses, it's very compact and streamlined compared to Redux original.
 - Design-System: I'm very big on component driven development and design-systems, so I built a simple one into this project using Storybook, Chromatic and NPM. On commit to master new components and changes go to Chromatic for review and visual testing.  Once signed off on and merged, the components from the project are shipped to NPM where they can be used like any NPM package for reuse.  You can visit this link to see the Chromatic system I created for this project. It's fully funcional, do what you like in there.
-  - Chromatic: https://chromatic.com/library?appId=60263de1aab4a60023ed8d70&branch=master
-  - This project's Storybook in Chromatic: https://master--60263de1aab4a60023ed8d70.chromatic.com    
+- Here is this project's [Chromatic](https://chromatic.com/library?appId=60263de1aab4a60023ed8d70&branch=master)
+- Here is this project's [Storybook published to Chromatic](https://master--60263de1aab4a60023ed8d70.chromatic.com)   
 
 
 ## Instructions:
