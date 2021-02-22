@@ -1,3 +1,15 @@
+# v0.1.9 (Mon Feb 22 2021)
+
+#### ⚠️ Pushed to `master`
+
+- update token ([@effinrich](https://github.com/effinrich))
+
+#### Authors: 1
+
+- Rich Tillman ([@effinrich](https://github.com/effinrich))
+
+---
+
 # v0.1.8 (Mon Feb 22 2021)
 
 #### ⚠️ Pushed to `master`
