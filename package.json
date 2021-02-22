@@ -1,6 +1,6 @@
 {
   "name": "endpoint-todo-list",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "private": false,
   "main": "dist/index.js",
   "repository": "https://effinrich@github.com/effinrich/endpoint-todo-list.git",
