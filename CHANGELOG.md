@@ -1,3 +1,15 @@
+# v0.1.12 (Mon Feb 22 2021)
+
+#### ⚠️ Pushed to `master`
+
+- more link fixes ([@effinrich](https://github.com/effinrich))
+
+#### Authors: 1
+
+- Rich Tillman ([@effinrich](https://github.com/effinrich))
+
+---
+
 # v0.1.11 (Mon Feb 22 2021)
 
 #### ⚠️ Pushed to `master`
