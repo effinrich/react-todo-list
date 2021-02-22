@@ -26,6 +26,11 @@ Chromatic allows sharing and peer review of UI/UX created in Storybook, but acce
 - Chromatic: https://chromatic.com/library?appId=60263de1aab4a60023ed8d70&branch=master
 - This project's Storybook in Chromatic: https://master--60263de1aab4a60023ed8d70.chromatic.com
 
+If cloning and planning to run the entire flow locally, a Chromatic token is required:
+- Sign up here (free version is fine): https://www.chromatic.com/start
+- Upon signup replace instances of "YOUR_TOKEN_HERE" with your new Chromatic token
+- Good to go
+
 # Getting Started with Create React App 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
