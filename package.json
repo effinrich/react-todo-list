@@ -1,11 +1,11 @@
 {
   "name": "endpoint-todo-list",
-  "version": "0.1.6",
+  "version": "0.1.12",
   "private": false,
   "main": "dist/index.js",
   "repository": "https://effinrich@github.com/effinrich/endpoint-todo-list.git",
   "author": "Rich <rich@freebirdrides.com>",
-  "description": "Coding challenge for Endpoint Closing",
+  "description": "Design system workflow. From developing components locally in Storybook to publishing for reuse on NPM.",
   "license": "MIT",
   "dependencies": {
     "@loadable/component": "^5.14.1",
@@ -46,7 +46,7 @@
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
     "release": "auto shipit --base-branch=master",
-    "chromatic": "./node_modules/.bin/chromatic --project-token=ce6357225fc6",
+    "chromatic": "chromatic --project-token=YOUR_CHROMATIC_TOKEN",
     "prettier-watch": "onchange \"**/*.js\" -- prettier --write {{changed}}"
   },
   "babel": {
@@ -179,21 +179,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "peerDependencies": {
-    "@storybook/react": ">=6.1.18",
-    "prop-types": ">=15.0.0",
-    "react": ">=17.0.0",
-    "react-dom": ">=17.0.0",
-    "styled-components": ">=4.0.0"
-  },
-  "bit": {
-    "env": {
-      "compiler": "bit.envs/compilers/react@2.0.0",
-      "tester": "bit.envs/testers/jest@22.4.3"
-    },
-    "componentsDefaultDirectory": "src/components/{name}",
-    "packageManager": "yarn"
   },
   "jest": {
     "collectCoverageFrom": [

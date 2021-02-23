@@ -1,3 +1,77 @@
+# v0.1.12 (Mon Feb 22 2021)
+
+#### ⚠️ Pushed to `master`
+
+- more link fixes ([@effinrich](https://github.com/effinrich))
+
+#### Authors: 1
+
+- Rich Tillman ([@effinrich](https://github.com/effinrich))
+
+---
+
+# v0.1.11 (Mon Feb 22 2021)
+
+#### ⚠️ Pushed to `master`
+
+- fix links ([@effinrich](https://github.com/effinrich))
+
+#### Authors: 1
+
+- Rich Tillman ([@effinrich](https://github.com/effinrich))
+
+---
+
+# v0.1.10 (Mon Feb 22 2021)
+
+#### ⚠️ Pushed to `master`
+
+- add details ([@effinrich](https://github.com/effinrich))
+
+#### Authors: 1
+
+- Rich Tillman ([@effinrich](https://github.com/effinrich))
+
+---
+
+# v0.1.9 (Mon Feb 22 2021)
+
+#### ⚠️ Pushed to `master`
+
+- update token ([@effinrich](https://github.com/effinrich))
+
+#### Authors: 1
+
+- Rich Tillman ([@effinrich](https://github.com/effinrich))
+
+---
+
+# v0.1.8 (Mon Feb 22 2021)
+
+#### ⚠️ Pushed to `master`
+
+- update package.json ([@effinrich](https://github.com/effinrich))
+
+#### Authors: 1
+
+- Rich Tillman ([@effinrich](https://github.com/effinrich))
+
+---
+
+# v0.1.7 (Fri Feb 19 2021)
+
+#### ⚠️ Pushed to `master`
+
+- delete this damn thing ([@effinrich](https://github.com/effinrich))
+- no message ([@effinrich](https://github.com/effinrich))
+- install polished ([@effinrich](https://github.com/effinrich))
+
+#### Authors: 1
+
+- Rich Tillman ([@effinrich](https://github.com/effinrich))
+
+---
+
 # v0.1.6 (Thu Feb 18 2021)
 
 #### ⚠️ Pushed to `master`

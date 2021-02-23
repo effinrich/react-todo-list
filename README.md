@@ -3,8 +3,8 @@
 - Mobile: The responsiveness can be tested within Storybook for each component. Once running, there is a small icon on the top bar of Storybook to adjust viewport.  
 - State management: I used redux/toolkit for state management and handling API responses, it's very compact and streamlined compared to Redux original.
 - Design-System: I'm very big on component driven development and design-systems, so I built a simple one into this project using Storybook, Chromatic and NPM. On commit to master new components and changes go to Chromatic for review and visual testing.  Once signed off on and merged, the components from the project are shipped to NPM where they can be used like any NPM package for reuse.  You can visit this link to see the Chromatic system I created for this project. It's fully funcional, do what you like in there.
-  - Chromatic: https://chromatic.com/library?appId=60263de1aab4a60023ed8d70&branch=master
-  - This project's Storybook in Chromatic: https://master--60263de1aab4a60023ed8d70.chromatic.com    
+- Here is this project's [Chromatic](https://chromatic.com/library?appId=60263de1aab4a60023ed8d70&branch=master)
+- Here is this project's [Storybook published to Chromatic](https://master--60263de1aab4a60023ed8d70.chromatic.com)   
 
 
 ## Instructions:
@@ -23,8 +23,13 @@ You'll notice a "storybook" script in package.json.  Open a terminal to the root
 
 ### Chromatic
 Chromatic allows sharing and peer review of UI/UX created in Storybook, but accessible on a public or private URL for colleagues to review and accept, deny or request edits to components.  Here are the chromatic links generated from this project's Storybook components:
-- Chromatic: https://chromatic.com/library?appId=60263de1aab4a60023ed8d70&branch=master
-- This project's Storybook in Chromatic: https://master--60263de1aab4a60023ed8d70.chromatic.com
+- Here is this project's [Chromatic](https://chromatic.com/library?appId=60263de1aab4a60023ed8d70&branch=master)
+- Here is this project's [Storybook published to Chromatic](https://master--60263de1aab4a60023ed8d70.chromatic.com)
+
+If cloning and planning to run the entire flow locally, a Chromatic token is required:
+- Sign up here (free version is fine): https://www.chromatic.com/start
+- Upon signup replace instances of "YOUR_TOKEN_HERE" with your new Chromatic token
+- Good to go
 
 # Getting Started with Create React App 
 
