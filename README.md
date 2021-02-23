@@ -1,4 +1,4 @@
-# Endpoint Take-Home Challenge
+# To do list using React, Storybook, Chromatic, CI and Plop generator:
 - Tooling: I used a few tools I've wanted to try out.  Those are LogRocket, Chromatic (see below) and PlopJs.  I can create logins by request.
 - Mobile: The responsiveness can be tested within Storybook for each component. Once running, there is a small icon on the top bar of Storybook to adjust viewport.  
 - State management: I used redux/toolkit for state management and handling API responses, it's very compact and streamlined compared to Redux original.
